@@ -1,0 +1,27 @@
+<style>
+    table, th, td {
+      border: 1px solid black;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th scope="col">ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Year Written</th>
+            <th>Edition</th>
+            <th>Price</th>
+        </tr>
+        <% data.forEach(dt => { %> 
+            <tr>
+                <td><%= dt.id %></td>
+                <td><%= dt.title %></td>
+                <td><%= dt.author %></td>
+                <td><%= dt.year_written %></td>
+                <td><%= dt.edition %></td>
+                <td><%= dt.price %></td>
+            </tr>
+        <% }) %>
+    </table>
+</body>
